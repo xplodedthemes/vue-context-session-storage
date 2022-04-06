@@ -1,7 +1,8 @@
 // ------------------------------------------------------
 // SessionStorage
 // ------------------------------------------------------
-function sessionStorage() {
+function sessionStorage(sessionKey) {
+  this.sessionKey = sessionKey || 'sessionKey';
   this.key = null;
 
   this.__getRandomString = function (len = 10) {
@@ -13,10 +14,10 @@ function sessionStorage() {
   };
 
   this.__getKey= function () {
-    let _key = window.sessionStorage.getItem('sessionKey');
+    let _key = window.sessionStorage.getItem(this.sessionKey);
     if (!_key) {
       _key = this.__getRandomString();
-      window.sessionStorage.setItem('sessionKey', _key);
+      window.sessionStorage.setItem(this.sessionKey, _key);
     }
     this.key = _key;
   }
