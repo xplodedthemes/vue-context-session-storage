@@ -10,8 +10,8 @@ if (!window.sessionStorage) {
 }
 
 const STORAGE = {
-  install (Vue, options) {
-    Vue.prototype.$session = new sessionStorage()
+  install (Vue, sessionKey) {
+    Vue.prototype.$session = new sessionStorage(sessionKey)
   }
 }
 
