@@ -12,7 +12,7 @@ npm install --save vue-sessionstorage
 Put in your main.js
 ```javascript
 import VueSessionStorage from 'vue-sessionstorage'
-Vue.use(VueSessionStorage)
+Vue.use(VueSessionStorage, 'sessionKey')
 ```
 
 ## Docs

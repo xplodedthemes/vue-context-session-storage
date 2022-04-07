@@ -20,5 +20,5 @@
     "babel-core": "^6.21.0",
     "webpack": "^1.14.0"
   },
-  "repository": "https://github.com/xplodedthemes/vue-session-storage"
+  "repository": "https://github.com/xplodedthemes/vue-context-session-storage"
 }
