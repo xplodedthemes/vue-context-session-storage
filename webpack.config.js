@@ -4,7 +4,7 @@ module.exports = {
   output: {
     path: './dist',
     filename: 'vue-session-storage.min.js',
-    library: 'VueSessionStorage',
+    library: 'VueContextSessionStorage',
     libraryTarget: 'umd'
   },
   module: {

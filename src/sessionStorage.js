@@ -1,8 +1,8 @@
 // ------------------------------------------------------
 // SessionStorage
 // ------------------------------------------------------
-function sessionStorage(sessionKey) {
-  this.sessionKey = sessionKey || 'sessionKey';
+function sessionStorage(options) {
+  this.sessionKey = options.hasOwnProperty('sessionKey') ? options.sessionKey : 'sessionKey';
   this.key = null;
 
   this.__getRandomString = function (len = 10) {
